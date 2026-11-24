@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f4f0" />
+    <meta name="description" content="A fixed-camera architectural construction timelapse. Explore twelve stages from site preparation to completion." />
+    <title>FORM — Construction Timelapse</title>
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+  </head>
+  <body>
+    <header class="header"><a class="brand" href="./" aria-label="Form home"><span class="brand-mark">F<span>↗</span></span>FORM<span class="brand-sub">MOTION STUDIES</span></a><span class="header-note">Architecture, in the making.</span><span class="project-tag"><i></i> PROJECT 001</span></header>
+    <main>
+      <section class="intro"><div><div class="eyebrow">CONSTRUCTION TIMELAPSE <span>/ 001</span></div><h1>From ground to <em>built.</em></h1><p>A single perspective. Every stage of the story.</p></div><div class="project-info"><span>BARMASH / FACADE STUDY</span><p>Construction & insulation <span>·</span> 12 construction stages</p></div></section>
+      <section class="studio" aria-label="Construction timelapse player">
+        <div class="viewer" id="viewer">
+          <div id="canvas-host" aria-label="Fixed-camera construction image viewer"></div>
+          <div class="viewer-top"><span class="view-tag"><i></i> FIXED PERSPECTIVE</span><span class="preview-tag">MASTER-REFERENCED STORYBOARD</span></div>
+          <div class="loading" id="loading" role="status">Preparing your perspective…</div>
+          <div class="viewer-bottom"><div><span class="stage-kicker" id="stage-number">STAGE 01 / 12</span><h2 id="stage-title">Site preparation</h2></div><span class="view-coordinate">CAM 01 <span>↗</span></span></div>
+          <div class="fullscreen-controls"><button id="fullscreen-play" aria-label="Play in fullscreen">Play</button><button id="exit-fullscreen">Exit fullscreen ↙</button></div>
+        </div>
+        <div class="transport"><div class="playback-buttons"><button class="primary" id="play" aria-label="Play timelapse"><span>▶</span> Play</button><button id="pause" aria-label="Pause timelapse" disabled><span>Ⅱ</span> Pause</button><button class="icon-button" id="restart" aria-label="Restart timelapse" title="Restart">↺</button><span class="divider"></span><span class="time"><strong id="current-time">00:00</strong><span> / 00:30</span></span></div><div class="transport-right"><label for="transition">Transition</label><select id="transition"><option value="dissolve">Soft dissolve</option><option value="mask">Masked reveal</option></select><button class="icon-button" id="fullscreen" aria-label="Enter fullscreen" title="Fullscreen">⛶</button></div></div>
+        <div class="timeline"><div class="timeline-heading"><span>SEQUENCE TIMELINE</span><span><strong>30s</strong> <span class="muted">DURATION</span><span class="timeline-dot">·</span><strong>12</strong> <span class="muted">KEYFRAMES</span></span></div><div class="ruler" aria-hidden="true"><span>00:00</span><span>00:05</span><span>00:10</span><span>00:15</span><span>00:20</span><span>00:25</span><span>00:30</span></div><input id="timeline" aria-label="Timeline position in seconds" type="range" min="0" max="30" step="0.01" value="0" /><div class="filmstrip" id="filmstrip" aria-label="Construction keyframes"></div></div>
+      </section>
+      <div class="below-player"><span><i></i> Camera locked <span class="small-divider">/</span> 16:9 aspect ratio <span class="small-divider">/</span> WebGL</span><span>Drag the timeline to explore <span class="keyboard-hint">SPACE</span> to play / pause</span></div>
+      <section class="project-footer"><div><span class="eyebrow">A BUILDING TAKES SHAPE</span><h3>Twelve moments. One transformation.</h3><p>Follow the process from the first groundworks to the final finishing touches.</p></div><div class="render-note"><span class="note-icon">▧</span><div><strong>From structure to finished facade.</strong><p>Demo sequence · Replace the images to tell your own story.</p></div></div></section>
+    </main><footer><span>FORM <span class="muted">/ Motion studies</span></span><span>Built frame by frame.</span></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
